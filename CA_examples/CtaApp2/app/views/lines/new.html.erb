@@ -1,0 +1,12 @@
+<h1>Add a New Train Line</h1>
+
+<p style="color:green;"><%= flash[:notice] %></p>
+<p style="color:red;"><%= flash[:alert] %></p>
+
+<ul>
+<% @line.errors.full_messages.each do |msg| %>
+  <li><%= msg %></li>
+<% end %>
+</ul>
+
+<%= render "form" %>

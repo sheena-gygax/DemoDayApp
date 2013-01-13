@@ -1,0 +1,9 @@
+<h1>Our Flavors</h1>
+
+<a href="http://localhost:3000/flavors/new">Add a New Flavor</a>
+
+<ul>
+  <% @flavors.each do |flavor| %>
+    <li>$<%= flavor.price %>: <%= flavor.name %>
+  <% end %>
+</ul>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyNotesApp</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>
+				<%= link_to image_tag('light_bulb.png'), root_url %>
+				<%= link_to "¡Aha!", root_url %>
+			</h1>
+		</header>
+		<section>
+			<%= yield %>
+		</section>
+</body>
+</html>

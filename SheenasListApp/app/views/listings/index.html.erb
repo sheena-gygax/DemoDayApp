@@ -1,0 +1,17 @@
+<h1>Welcome to Sheena's List</h1>
+
+<p><a href="/home/new">Add a listing</a></p>
+
+<ul>
+<% @listings.each do |listing| %>
+	<li>
+		<a href="home/<%= listing.id %>"><%= listing.item %></a> | 
+		<a href ="home/<%= listing.id %>/edit">Edit</a> | 
+		<%= link_to "Delete",
+		"/home/#{listing.id}",
+		:method => :delete,
+		:confirm => 'You sure about that?'%>
+	</li>
+<% end %>	
+
+</ul>

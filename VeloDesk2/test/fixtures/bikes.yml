@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  style: MyString
+  size: MyString
+  image: MyString
+  date_desired: 2012-05-29
+  out: MyString
+  expected_return: 2012-05-29
+  first_choice: MyString
+  second_choice: MyString
+
+two:
+  style: MyString
+  size: MyString
+  image: MyString
+  date_desired: 2012-05-29
+  out: MyString
+  expected_return: 2012-05-29
+  first_choice: MyString
+  second_choice: MyString

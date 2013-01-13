@@ -1,0 +1,19 @@
+<h1>Add a New Item</h1>
+<%= form_for @gear do |form| %>
+	<%= form.label :item, "Item:" %>
+	<%= form.text_field :item %>
+	
+	<%= form.label :location, "Location:" %>
+	<%= form.text_field :location %>
+	
+	<%= form.label :price, "Price:" %>
+	<%= form.text_field :price %>
+	
+	<%= form.label :start, "Start:" %>
+	<%= form.text_field :start %>
+	
+	<%= form.label :end, "end:" %>
+	<%= form.text_field :end %>
+	
+	<%= form.submit %>
+<% end %>

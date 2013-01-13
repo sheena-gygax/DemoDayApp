@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  item: MyString
+  location: MyString
+  price: 1.5
+  start: 2012-05-02
+  end: 2012-05-02
+
+two:
+  item: MyString
+  location: MyString
+  price: 1.5
+  start: 2012-05-02
+  end: 2012-05-02

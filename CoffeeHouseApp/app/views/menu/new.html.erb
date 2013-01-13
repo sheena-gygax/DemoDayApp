@@ -1,0 +1,19 @@
+<h1>Add a Drink</h1>
+	<%= form_for @drink do |f| %>
+		<p>
+		<%= f.label :name  %>
+		<%= f.text_field :name %>
+		</p>
+		<p>
+		<%= f.label :cost  %>
+		<%= f.text_field :cost %>
+		</p>
+		<p>
+		<%= f.label :menu  %>
+		<%= f.collection_select( :menu_id, @menu, :id, :roast ) %>
+		</p>
+		<%= f.submit %>
+		<% end %>
+		
+		
+		

@@ -1,0 +1,8 @@
+<h1>Chance Encounters</h1>
+<p style="color:green;"><%= flash[:notice]%></p>
+<p><%= link_to "Add your Chance Encounter", new_encounter_url %></p>
+	<ul>
+		<% @encounters.each do |encounter| %>
+			<li><%= link_to encounter.title, encounter_url(encounter.id) %></li>
+		<% end %>
+	</ul>

@@ -1,0 +1,23 @@
+<h1>Add a New Train Line</h1>
+
+<%= form_for @line do |form| %>
+
+  <%= form.label :name, "Name:" %>
+  <%= form.text_field :name %>
+  
+  <%= form.label :frequency, "Frequency:" %>
+  <%= form.text_field :frequency %>
+  
+  <%= form.submit %>
+<% end %>
+
+<!--
+<%#= form_tag train_lines_url do %>
+  <%#= label_tag "Name:" %>
+  <%#=# text_field_tag "name" %>
+  <%#= label_tag "Frequency:" %>
+  <%#= text_field_tag "frequency" %>
+  <%#= submit_tag %>
+<%# end %>
+
+-->

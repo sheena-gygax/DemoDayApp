@@ -1,0 +1,12 @@
+
+	<ul>
+		<% @notes.each do |note| %>
+			<li>
+				<%= note.description %>
+			</li
+ 	</ul>
+<% end %>
+
+<div class="new_note">
+	<%= render 'form' %>
+</div>

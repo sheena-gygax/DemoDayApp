@@ -1,0 +1,27 @@
+<h1>Edit the <%= @line.name %> Line</h1>
+
+<%= form_for @line do |form| %>
+
+  <%= form.label :name, "Name:" %>
+  <%= form.text_field :name %>
+  
+  <%= form.label :frequency, "Frequency:" %>
+  <%= form.text_field :frequency %>
+  
+  <%= form.submit %>
+<% end %>
+
+<!-- 
+<%#= form_tag train_line_url(@line.id), :method => :put do %>
+  <%#= label_tag "Name:" %>
+  <%#= text_field_tag "name", @line.name %>
+  <%#= label_tag "Frequency:" %>
+  <%#= text_field_tag "frequency", @line.frequency %>
+  <%#= submit_tag %>
+<%# end %>
+-->
+
+
+
+
+

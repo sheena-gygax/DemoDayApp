@@ -1,0 +1,29 @@
+<h1>Create a new Show</h1>
+
+<%= form_tag '/home' do %>
+
+<%= label_tag 'Name' %>
+<%= text_field_tag :name %>
+
+<%= label_tag 'Address' %>
+<%= text_field_tag :address %>
+
+<%= label_tag 'City' %>
+<%= text_field_tag :city %>
+
+<%= label_tag 'State' %>
+<%= text_field_tag :state %>
+
+<%= label_tag 'Zip' %>
+<%= text_field_tag :zip %>
+
+<%= label_tag 'Price' %>
+<%= text_field_tag :price %>
+
+<%= label_tag 'Genre' %>
+<%= text_field_tag :genre %>
+<br/>
+<%= submit_tag 'Create your show'%> or <a href='/'>Cancel</a>
+
+<% end %>
+

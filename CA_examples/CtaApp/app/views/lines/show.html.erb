@@ -1,0 +1,13 @@
+<h1><%= @line.name %> Line</h1>
+
+<%= link_to "Delete", train_line_url(@line.id),
+            :method => :delete, :confirm => "It's about time!" %>
+
+<%= link_to "Edit", edit_train_line_url(@line.id) %>
+
+<p>This train runs every <%= @line.frequency %> minutes.</p>
+
+<% if @line.subway? %>
+  <p>This train is a subway train.</p>
+<% end %>
+

@@ -1,0 +1,14 @@
+<%= form_for @line do |form| %>
+
+<p>
+  <%= form.label :name, "Name:" %>
+  <%= form.text_field :name %>
+</p>  
+<p>
+  <%= form.label :frequency, "Frequency:" %>
+  <%= form.text_field :frequency %>
+</p>  
+
+<p><%= form.submit %></p>
+  
+<% end %>

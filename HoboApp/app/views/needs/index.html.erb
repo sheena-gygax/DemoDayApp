@@ -1,0 +1,29 @@
+<h1>Give a Hobo Something Useful</h1>
+
+<button class="new"><%= link_to 'New Need', new_need_path %></button>
+
+<p style="color:green;"><%= flash[:notice] %></p>
+<div class="table">
+<table>
+  <tr>
+    <th class="item">Item</th>
+    <th class="price">Price</th>
+    <th scope="col"></th>
+    <th scope="col"></th>
+    <th scope="col"></th>
+  </tr>
+
+<% @needs.each do |need| %>
+  <tr>
+    <td class="item"><%= need.item %></td>
+    <td class="price"><%= need.price %></td>
+    <td class="show"><%= link_to 'Show', need %></td>
+    <td class="edit"><%= link_to 'Edit', edit_need_path(need) %></td>
+    <td class="destroy"><%= link_to 'Destroy', need, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+
+
+

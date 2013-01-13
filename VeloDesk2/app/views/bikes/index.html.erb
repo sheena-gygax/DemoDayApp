@@ -1,0 +1,23 @@
+<h1>Bike Inventory</h1>
+<div class="table">
+<table>
+	<thead>
+		<th class ="thead">Check out!</th>
+		<th class ="thead">First Choice</th>
+		<th class ="thead">Second Choice</th>
+		<th class ="thead">Style</th>
+		<th class ="thead">Size</th>
+	</thead>
+	<% @bikes.each do |bike| %>
+	<tbody>
+		<tr>
+			<td><%= link_to "Check Out", new_bike_url %></td>
+			<td><%= bike.first_choice %></td>
+			<td><%= bike.second_choice %></td>
+			<td><%= bike.style %></td>
+			<td><%= bike.size %></td>
+		</tr>
+	</tbody>
+	<% end %>
+</table>
+</div>

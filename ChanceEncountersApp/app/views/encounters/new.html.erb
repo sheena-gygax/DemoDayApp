@@ -1,0 +1,9 @@
+<h1>Add your Chance Encounter</h1>
+<p style="color:red;"><%= flash[:alert]%></p>
+	<ul>
+		<% @encounter.errors.full_messages.each do |msg| %>q
+		<li><%= msg %></li>
+		<% end %>
+	</ul>
+<p><%= render "form" %></p>
+<p><%= link_to "Cancel", encounters_url %></p>

@@ -1,0 +1,13 @@
+<%= form_for @encounter do |form| %>
+	<%= form.label :title, "Title:" %>
+	<%= form.text_field :title %>
+	
+	<%= form.label :comment, "Comment:" %>
+	<%= form.text_field :comment %>
+	
+	<%= form.label :day, "Posted On:" %>
+	<%= form.text_field :day %>
+	
+	<%= form.submit %>
+		
+	<% end %>

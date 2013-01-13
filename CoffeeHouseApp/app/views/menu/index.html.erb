@@ -1,0 +1,22 @@
+<h1>Drink Menu</h1>
+
+<p><%= link_to "Add a drink", new_menu_url %>
+
+<table>
+	<thead>
+		<tr>
+			<th>Drink Name</th>
+			<th>Size</th>
+			<th>Cost</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @drinks.each do |drink| %>
+		<tr>
+		<td><%= drink.name %></td>
+			<td><%= drink.menu.size %></td>
+			<td><%= number_to_currency(drink.cost) %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

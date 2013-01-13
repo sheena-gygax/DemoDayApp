@@ -1,0 +1,33 @@
+<h1>Edit the <%= @ticket.name %> Show</h1>
+
+<%= form_tag "/#{@ticket.id}", :method => :put do %>
+
+<%= label_tag 'Name' %>
+<%= text_field_tag :name, @ticket.name %>
+
+<%= label_tag 'Address' %>
+<%= text_field_tag :address, @ticket.address %>
+
+<%= label_tag 'City' %>
+<%= text_field_tag :city, @ticket.city %>
+
+<%= label_tag 'State' %>
+<%= text_field_tag :state, @ticket.state %>
+
+<%= label_tag 'Zip' %>
+<%= text_field_tag :zip, @ticket.zip %>
+
+<%= label_tag 'Price' %>
+<%= text_field_tag :price, @ticket.price %>
+
+<%= label_tag 'Genre' %>
+<%= text_field_tag :genre, @ticket.genre %>
+
+<%= submit_tag 'Update your show'%>
+or 
+<%= link_to 'Delete',
+ 		"/#{@ticket.id}",
+ 		:method => :delete,
+		:confirm => 'Sure about that?'%>
+
+<% end %>

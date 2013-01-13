@@ -1,0 +1,11 @@
+<h1><%= @gear.item %> for Rent</h1>
+
+	<p><strong>Item:</strong> <%= @gear.item %></p> 
+	<p><strong>Price:</strong> $<%= @gear.price %></p>
+	<p><strong>Location:</strong> <%= @gear.location %>
+	<p><strong>Date Available:</strong> <%= @gear.start %> <strong>Date Available Until:</strong> <%= @gear.end %></p>
+
+	<p>
+	<%= link_to "Edit", edit_gear_url(@gear.id) %> | 
+	<%= link_to "Delete", gear_item_url(@gear.id), :method => :delete, :confirm => "This will go away forever, are you sure?" %>
+	</p>

@@ -1,0 +1,11 @@
+<h1>What would you like to rent out?</h1>
+
+<%= link_to "Add a new item", new_gear_url %>
+<ul>
+	<% @all_gear.each do |gear_listing| %>
+		<li>
+			<%= link_to gear_listing.item, gear_item_url(gear_listing.id) %>
+			$ <%= gear_listing.price %>
+		</li>
+	<% end %>
+</ul>

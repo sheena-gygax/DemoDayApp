@@ -1,0 +1,14 @@
+<h1><%= @encounter.title %></h1>
+
+<p><strong>Date Posted:</strong><%= @encounter.day %></p>
+	
+<p><strong>Comment:</strong> <%= @encounter.comment%></p>
+
+<p><%= link_to "Edit", edit_encounter_url(@encounter.id) %> | 
+	<%= link_to "Delete", encounter_url(@encounter.id),
+ 	:method  => :delete, :confirm  => "You better be sure about that." %></p>
+
+<p> << Back to <%= link_to "Chance Encounters", encounters_url %>
+
+
+	

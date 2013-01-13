@@ -1,0 +1,52 @@
+body {
+	font-family: Lucida Console, Monaco5, monospace;
+	margin: 25px 75px;
+	background: lightgrey;
+}
+
+.wrapper {
+	width: 600px;
+	margin: auto;
+}
+
+a {
+	text-decoration: none;
+	color: #E61B41;
+}
+
+a:hover {
+	color: #70DBAA;
+}
+
+input, label {
+	display: block;
+}
+
+label {
+	padding: 10px 0;
+}
+
+.table {
+	text-align: center;
+}
+
+.thead {
+	background: #4D4D4D;
+	color: #fff;
+}
+
+button {
+	background-image: linear-gradient(bottom, rgb(43,194,194) 46%, rgb(61,255,255) 73%);
+	background-image: -o-linear-gradient(bottom, rgb(43,194,194) 46%, rgb(61,255,255) 73%);
+	background-image: -moz-linear-gradient(bottom, rgb(43,194,194) 46%, rgb(61,255,255) 73%);
+	background-image: -webkit-linear-gradient(bottom, rgb(43,194,194) 46%, rgb(61,255,255) 73%);
+	background-image: -ms-linear-gradient(bottom, rgb(43,194,194) 46%, rgb(61,255,255) 73%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.46, rgb(43,194,194)),
+		color-stop(0.73, rgb(61,255,255))
+	);
+}

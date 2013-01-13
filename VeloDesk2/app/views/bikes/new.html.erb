@@ -1,0 +1,16 @@
+<h1>Request A Bike</h1>
+
+	<%= form_for @bike do |f| %>
+	
+	<%= f.label :date_desired, "Request Date" %>
+	<%= f.text_field :date_desired %>
+	
+	<%= f.label :first_choice, "First Choice" %>
+	<%= f.text_field :first_choice %>
+	
+	<%= f.label :second_choice, "Second Choice" %>
+	<%= f.text_field :second_choice %>
+	
+	<%= f.submit "Add Request" %>
+	
+	<% end %>

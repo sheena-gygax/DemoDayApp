@@ -1,0 +1,15 @@
+<h1>Post your listing</h1>
+	<%= form_tag "/home" do %>
+		<%= label_tag "Item" %>
+		<%= text_field_tag "item" %>
+
+		<%= label_tag "Price" %>
+		<%= text_field_tag "price" %>
+
+		<%= label_tag "Location" %>
+		<%= text_field_tag "location" %>
+
+		<%= submit_tag "Add your listing" %>
+
+	<% end %>
+<p><a href="/home"><- Go back to listings</a></p>

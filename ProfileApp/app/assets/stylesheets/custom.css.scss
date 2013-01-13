@@ -1,0 +1,31 @@
+body {
+	
+	font-family: arial;
+	padding: 0px 250px;
+	
+	input, label {
+	display: block;
+	margin-bottom: 15px;
+	}
+	
+	.notice {
+		color: #CC081E;
+		font-weight: bold;
+	}
+
+}
+
+button {
+	background: #3970C9;
+	padding: 10px 15px;
+	color: #fff;
+}
+
+button a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.nav {
+	float: right;
+}

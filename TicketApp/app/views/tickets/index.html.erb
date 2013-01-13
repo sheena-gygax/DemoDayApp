@@ -1,0 +1,57 @@
+<h1>GE Tickets</h1>
+<p><a href='/new'>Create a new show</a></p>
+
+<table>
+<tr>
+	<th>Artist</th>
+	<th>Price</th>
+	<th>Address</th>
+	<th>City</th>
+	<th>State</th>
+	<th>Zip</th>
+	<th>Genre</th>
+	<th>Edit</th>
+	<th>Delete</th>
+</tr>
+
+<% @tickets.each do |ticket| %>
+
+<tr>
+	<td>
+	<a href="<%= ticket.id %>">
+	<%= ticket.name %>
+	</a> 
+	</td>
+	<td>
+	$<%= ticket.price %>0 
+	</td>
+	<td>
+	<%= ticket.address %> 
+	</td>
+	<td>
+	<%= ticket.city %> 
+	</td>
+	<td>
+	<%= ticket.state %> 
+	</td>
+	<td>
+	<%= ticket.zip %> 
+	</td>
+	<td>
+	<%= ticket.genre %>
+	</td>
+	<td>
+	<a href="<%=ticket.id %>/edit">
+		Edit
+	</a>
+	</td>
+	<td>
+	<%= link_to 'Delete',
+	 		"/#{ticket.id}",
+	 		:method => :delete,
+			:confirm => 'Sure about that?'%>
+	</td>	
+</tr>
+	<% end %>
+
+</table>
